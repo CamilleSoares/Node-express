@@ -11,7 +11,10 @@ server.post('/device', function (req, res) {
 server.put('/device', function (req, res) {
     res.send('Got a PUT request at /user')
   })
-
+server.delete('/device', function (req, res) {
+    res.send('Got a DELETE request at /user')
+  })
+  
 server.listen(port, () =>{
     console.log(`Example app listening on port ${port}`)
 })
